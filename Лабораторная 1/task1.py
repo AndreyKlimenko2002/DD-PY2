@@ -6,8 +6,8 @@ from typing import Union
 class SoundInterface:
     """Класс "звуковая карта" с двумя аттрибутами: максимальная частота дискретизации и кол-во входов
     >>> sound = SoundInterface(96000, 3)
+    
     """
-
     def __init__(self, frequency: int, inputs: int):
         self.frequency = frequency
         self.inputs = inputs
@@ -28,6 +28,7 @@ class SoundInterface:
 class GoogleDrive:
     """ Класс "google диск" с двумя атрибутамии - максимальный размер хранилища и используемое место
     >>> drive = GoogleDrive(15, 5.8)
+    
     """
     def __init__(self, storage: Union[int, float], used_memory: Union[int, float],):
         self.storage = storage
@@ -59,6 +60,7 @@ class GoogleDrive:
 class Elevator:
     """ Класс "лифт" c двумя атрибутами: максимальная вместимость и кол-во человек внутри
     >>> elev = Elevator(12, 7)
+    
     """
     def __init__(self, capacity: int, people_inside: int):
         if not isinstance(capacity, int):
