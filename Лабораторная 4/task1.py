@@ -155,3 +155,4 @@ print(ball.diameter_of_ball)
 
 if __name__ == "__main__":
     doctest.testmod()  # тестируем примеры, которые находятся в документации
+    
